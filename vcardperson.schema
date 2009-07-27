@@ -1,0 +1,9 @@
+# Put this in slapd.conf
+#include		/etc/ldap/schema/vcardperson.schema
+objectclass	( 2.16.840.1.113730.3.2.2.1234
+    NAME 'vCardPerson'
+	DESC 'vCard/hCard inspired object'
+    SUP inetOrgPerson
+    STRUCTURAL
+	MAY ( friendlyCountryName )
+	)
